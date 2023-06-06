@@ -45,7 +45,7 @@ int main(){
         unsigned long largestProduct = 1, currProd;
         char grid[gSize*gSize*2];
         gridFile = fopen(filename, "r");
-        fread(&grid, sizeof(char), gSize*gSize*2, gridFile);
+        fread(grid, sizeof(char), gSize*gSize*2, gridFile);
         fclose(gridFile);
         for(size_t i = 0; i < gSize; ++i){
         	for(size_t j = 1; j < 2*gSize; j+=2){
